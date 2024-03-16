@@ -13,7 +13,14 @@ void main() {
             ], begin: Alignment.topLeft, end: Alignment.bottomRight),
           ),
           child: const Center(
-            child: Text('Roll the Dice'),
+            child: Text(
+              'Roll the Dice',
+              style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.w600,
+                  fontFamily: 'Davish',
+                  fontSize: 25),
+            ),
           ),
         ),
       ),
