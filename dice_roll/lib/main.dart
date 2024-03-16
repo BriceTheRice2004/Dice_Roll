@@ -2,10 +2,13 @@ import 'package:flutter/material.dart';
 
 void main() {
   runApp(
-    const MaterialApp(
+    MaterialApp(
       home: Scaffold(
-        body: Center(
-          child: Text('Roll the Dice'),
+        body: Container(
+          decoration: const BoxDecoration(color: Colors.deepPurple),
+          child: const Center(
+            child: Text('Roll the Dice'),
+          ),
         ),
       ),
     ),
