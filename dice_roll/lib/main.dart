@@ -1,5 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MaterialApp(home: Text('Roll the Dice')));
+  runApp(
+    const MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Text('Roll the Dice'),
+        ),
+      ),
+    ),
+  );
 }
