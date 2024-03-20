@@ -9,6 +9,9 @@ class AppGradientContainer extends StatelessWidget {
   //const AppGradientContainer ({key}):super{key:key};
 
   const AppGradientContainer({super.key});
+
+  void rollDice() {}
+
   @override
   Widget build(context) {
     //What gets returned on screen
@@ -21,7 +24,30 @@ class AppGradientContainer extends StatelessWidget {
         ], begin: startAlignment, end: endAlignment),
       ),
       child: Center(
-        child: Image.asset('assets/images/dice-1.png', width: 200),
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Image.asset('assets/images/dice-1.png', width: 200),
+            const SizedBox(
+              height: 20,
+            ),
+            TextButton(
+              onPressed: rollDice,
+              style: TextButton.styleFrom(
+                padding: const EdgeInsets.only(
+                  top: 20,
+                ),
+                foregroundColor: Colors.white,
+                textStyle: const TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w600,
+                    fontFamily: 'Davish',
+                    fontSize: 25),
+              ),
+              child: const Text('Roll the Dice'),
+            )
+          ],
+        ),
       ),
     );
   }
