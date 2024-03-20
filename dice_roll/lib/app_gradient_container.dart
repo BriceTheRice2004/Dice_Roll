@@ -21,7 +21,7 @@ class AppGradientContainer extends StatelessWidget {
         ], begin: startAlignment, end: endAlignment),
       ),
       child: const Center(
-        child: AppText(),
+        child: AppText("Roll the Dice"),
       ),
     );
   }
