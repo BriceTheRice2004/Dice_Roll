@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:dice_roll/app_text.dart';
 
+const startAlignment = Alignment.topRight;
+const endAlignment = Alignment.bottomLeft;
+
 //Like creating classes
 class AppGradientContainer extends StatelessWidget {
   //const AppGradientContainer ({key}):super{key:key};
@@ -15,7 +18,7 @@ class AppGradientContainer extends StatelessWidget {
           Color.fromARGB(255, 0, 253, 211),
           Color.fromARGB(255, 87, 236, 131),
           Color.fromARGB(255, 188, 245, 82)
-        ], begin: Alignment.topLeft, end: Alignment.bottomRight),
+        ], begin: startAlignment, end: endAlignment),
       ),
       child: const Center(
         child: AppText(),
