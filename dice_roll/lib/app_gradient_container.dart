@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:dice_roll/app_text.dart';
+//import 'package:dice_roll/app_text.dart';
 
 const startAlignment = Alignment.topRight;
 const endAlignment = Alignment.bottomLeft;
@@ -20,8 +20,8 @@ class AppGradientContainer extends StatelessWidget {
           Color.fromARGB(255, 188, 245, 82)
         ], begin: startAlignment, end: endAlignment),
       ),
-      child: const Center(
-        child: AppText("Roll the Dice"),
+      child: Center(
+        child: Image.asset('assets/images/dice-1.png', width: 200),
       ),
     );
   }
